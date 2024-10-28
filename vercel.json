@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+    "src": "src/main.tj",
+    "use": "@vercel/node"
+    }
+  ]
+  "routes": [
+    {
+      "src": "(.*)",
+      "dest": "src/main.tj"
+    }
+  ]
+}
